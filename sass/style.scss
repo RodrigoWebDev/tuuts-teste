@@ -1,2 +1,45 @@
+//GERAL
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    padding:40px 0;
+}
+//VAR & MIXINS
+
 $color-primary: #23272b;
+$text-color: white;
+
+@mixin transition(){
+    transition:.3s;
+    cursor:pointer;
+    opacity:0.6;
+}
+
+//NAV
+
+.navbar{
+    padding:20px;
+    .navbar-brand{
+        text-transform: uppercase;
+        font-weight:bolder;
+        font-size:30px;
+    }
+    .navbar-brand:hover{
+        @include transition();
+    }
+}
+
+@media (max-width:768px){
+    .navbar{
+        .nav-link{
+            text-align:center;
+        }
+    }
+}
+
 

@@ -11,22 +11,26 @@
 </head>
 
 <body>
-    <header class="header navbar bg-dark">
-        <div class="row">
-            <div class="col-md-3">
-                <h1 class="header__title subtitle">Tuut</h1>
-            </div>
-            <div class="col-md-9">
-                <nav class="header__nav ">
-                    <ul class="nav__ul">
-                        <li>Home</li>
-                        <li>Sobre</li>
-                        <li>Contato</li>
-                    </ul>
-                </nav>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tuuts</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Porfolio</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!---------------    --------------->
     <section class="slider">
@@ -34,22 +38,22 @@
     </section>
 
     <!---------------    --------------->
-    <section class="about">
-        <h2 class="subtitle">Sobre a TUUT</h2>
+    <section id="about" class="about">
+        <h2 class="title">Sobre a TUUT</h2>
         <div class="about__alert">
             <p>A <span class="font-weight-bolder">TUUT</span> conduz seu negócio com inteligência emocional, pensamento criativo e entusiasmo coletivo. Primado por uma comunicação integrada, nossa plataforma de atuação é múltipla e o nosso posicionamento e multidisciplinar. Aqui, a gente executa todo o projeto com estratégia, conceito, conteúdo e design. Raciocinamos em todas as mídias, viabilizando projetos para pequenas e grandes marcas, no Brasil e no exterior</p>
         </div>
     </section>
 
     <section class="gallery">
-        <h2 class="subtitle">Galeria TUUT</h2>
+        <h2 class="title">Galeria TUUT</h2>
         <div>
             <h2>Aqui vai a GALERIA :D!</h2>
         </div>
     </section>
 
-    <section class="portfolio">
-        <h2 class="subtitle">Alguns de nossos projetos</h2>
+    <section id="portfolio" class="portfolio">
+        <h2 class="title">Alguns de nossos projetos</h2>
         <div class="row">
             <div class="col-md-6">
                 <ul class="portfolio__ul">
@@ -79,6 +83,9 @@
             <i class="fab fa-instagram"></i>
         </div>
     </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
