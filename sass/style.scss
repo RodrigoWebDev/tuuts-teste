@@ -13,15 +13,25 @@ section {
     text-align: center;
     padding-bottom: 30px;
 }
+
 .navbar-brand {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 30px;
 }
 
+//SLIDER
+.slider {
+    padding-top:0 !important;
+    .metaslider {
+        max-width: 100% !important;
+    }
+}
+
+
 
 //VAR & MIXINS
-$primary-color: #2d3436;
+$primary-color: #202124;
 
 $text-color: white;
 
@@ -33,7 +43,7 @@ $text-color: white;
 
 //NAV
 .navbar {
-    background:$primary-color;
+    background: $primary-color;
     padding: 20px;
     .navbar-brand:hover {
         @include transition();
@@ -67,33 +77,33 @@ $text-color: white;
             padding: 30px 0;
         }
     }
-    .alert-darkness{
-        background:$primary-color;
-        color:white !important;
+    .alert-darkness {
+        background: $primary-color;
+        color: white !important;
     }
 }
 
 //FOOTER
 .footer {
     background: $primary-color;
-    padding:20px;
+    padding: 20px;
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .navbar-brand{
-        color:$text-color !important;
+    .navbar-brand {
+        color: $text-color !important;
     }
-    i{
-        color:white !important;
-        font-size:40px;
-        margin-left:20px;
+    i {
+        color: white !important;
+        font-size: 40px;
+        margin-left: 20px;
     }
-    
-    i:hover{
+
+    i:hover {
         @include transition();
-        
+
     }
 
 }
