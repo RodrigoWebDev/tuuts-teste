@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <nav class="sticky-top navbar navbar-expand-md navbar-dark bg-dark">
+    <nav id="home" class="sticky-top navbar navbar-expand-md navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Tuut</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -33,11 +33,16 @@
     </nav>
 
     <!---------------  SLIDER  --------------->
+
     <section class="slider">
         <h2>Aqui vai o Slider! :D</h2>
     </section>
 
     <!---------------  ABOUT  --------------->
+    <div class="container">
+        <hr>
+    </div>
+
     <section id="about" class="about">
         <div class="container">
             <h2 class="title">Sobre a <span class="text-uppercase">Tuut</span></h2>
@@ -48,6 +53,9 @@
     </section>
 
     <!---------------  GALLERY  --------------->
+    <div class="container">
+        <hr>
+    </div>
 
     <section class="gallery">
         <h2 class="title">Galeria <span class="text-uppercase">Tuut</span></h2>
@@ -57,6 +65,9 @@
     </section>
 
     <!---------------  GALLERY  --------------->
+    <div class="container">
+        <hr>
+    </div>
 
     <section id="portfolio" class="portfolio">
         <div class="container">
@@ -65,11 +76,11 @@
                 <div class="col-md-6">
                     <ul class="portfolio__ul">
                         <div class="alert alert-dark" role="alert">Projeto 1</div>
-                        <div class="alert alert-dark" role="alert">Projeto 2</div>
+                        <div class="alert alert-darkness" role="alert">Projeto 2</div>
                         <div class="alert alert-dark" role="alert">Projeto 3</div>
-                        <div class="alert alert-dark" role="alert">Projeto 4</div>
+                        <div class="alert alert-darkness" role="alert">Projeto 4</div>
                         <div class="alert alert-dark" role="alert">Projeto 5</div>
-                        <div class="alert alert-dark" role="alert">Projeto 6</div>
+                        <div class="alert alert-darkness" role="alert">Projeto 6</div>
                         <div class="alert alert-dark" role="alert">Projeto 7</div>
                     </ul>
                 </div>
@@ -82,20 +93,31 @@
 
     </section>
 
+    <!---------------  GALLERY  --------------->
+    <div class="container">
+        <hr>
+    </div>
+
+
     <section class="blog">
         <h2>Aqui vai os 2 posts mais recentes</h2>
     </section>
 
+    <!---------------  FOOTER  --------------->
+
     <footer class="footer">
-        <a class="footer__title">Tuut</a>
-        <div class="footer__social">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram"></i>
+        <div class="container">
+            <a class="navbar-brand">Tuut</a>
+            <div class="footer__social">
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
     <script src="js/script.js"></script>
 </body>
 
