@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Tuut</title>
-    <?php wp_head();?>
-</head>
-
-<body>
-    <nav class="sticky-top navbar navbar-expand-md navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Tuut</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#top">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Porfolio</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <?php get_header();?>
     <!---------------  SLIDER  --------------->
 
     <section id="top" class="slider">
@@ -105,23 +71,6 @@
     </section>
 
     <!---------------  FOOTER  --------------->
+    <?php get_footer();?>
 
-    <footer class="footer">
-        <div class="container">
-            <a class="navbar-brand">Tuut</a>
-            <div class="footer__social">
-                <a href=""><i class="fab fa-facebook-square"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
     
-    <?php wp_footer()?>
-
-    <!--<script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/smooth-scroll.js"></script>
-    <script src="js/script.js"></script>-->
-</body>
-
-</html>
