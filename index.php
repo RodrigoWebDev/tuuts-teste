@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Tuut</title>
+    <?php wp_head();?>
 </head>
 
 <body>
-    <nav id="home" class="sticky-top navbar navbar-expand-md navbar-dark">
+    <nav class="sticky-top navbar navbar-expand-md navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Tuut</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -19,7 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#top">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Sobre</a>
@@ -34,7 +35,7 @@
 
     <!---------------  SLIDER  --------------->
 
-    <section class="slider">
+    <section id="top" class="slider">
         <h2>Aqui vai o Slider! :D</h2>
     </section>
 
@@ -114,11 +115,13 @@
             </div>
         </div>
     </footer>
+    
+    <?php wp_footer()?>
 
-    <script src="js/jquery.min.js"></script>
+    <!--<script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smooth-scroll.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>-->
 </body>
 
 </html>
