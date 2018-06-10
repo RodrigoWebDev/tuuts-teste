@@ -25,6 +25,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Porfolio</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo get_page_link(14); ?>">Blog</a>
+                    </li>
                 </ul>
             </div>
         </div>

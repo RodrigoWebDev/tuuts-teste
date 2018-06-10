@@ -1,5 +1,4 @@
 //VAR & MIXINS
-
 $primary-color: #202124;
 $link-color: #e74c3c;
 $link-color-hover: #c0392b;
@@ -14,7 +13,7 @@ $text-color: white;
 
 @mixin color-transition() {
     cursor: pointer;
-    color:$link-color !important;
+    color: $link-color !important;
     transition: .3s;
 }
 
@@ -42,16 +41,41 @@ section {
     font-size: 30px;
 }
 
-.sticky-top{
+.sticky-top {
     position: -webkit-sticky !important;
     position: sticky !important;
 }
 
+ul {
+    list-style: none;
+}
+
 //SLIDER
 .slider {
-    padding-top:0 !important;
+    padding-top: 0 !important;
     .metaslider {
         max-width: 100% !important;
+    }
+}
+
+//HERO
+.hero {
+    padding-top: 0;
+    position: relative;
+    .attachment-post-thumbnail {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: $link-color;
+        text-shadow: 1px 1px 1px black;
+        font-weight: bolder;
+        font-size: 50px;
     }
 }
 
@@ -60,18 +84,18 @@ section {
 .navbar {
     padding: 20px;
     position: absolute;
-    top:0;
-    left:0;
-    z-index:1;
+    top: 0;
+    left: 0;
+    z-index: 2;
     width: 100%;
-    transition:.5s;
+    transition: .5s;
     .navbar-brand:hover {
         @include color-transition();
     }
-    a{
-        color:$text-color !important;
+    a {
+        color: $text-color !important;
     }
-    a:hover{
+    a:hover {
         @include color-transition();
     }
 }
@@ -85,9 +109,8 @@ section {
 }
 
 //GALLERY
-
-.gallery{
-    background:$primary-color;
+.gallery {
+    background: $primary-color;
 }
 
 //PORTFOLIO
@@ -113,7 +136,7 @@ section {
         background: $link-color-hover;
         color: $text-color !important;
     }
-    
+
     .alert-dark {
         background: $primary-color;
         color: $text-color !important;
@@ -121,34 +144,48 @@ section {
 }
 
 //BLOG
-
-.blog{
-    background:$primary-color;
-    color:$text-color;
-    .post{
-        img{
-            width:100%;
-            height:auto;
+.blog {
+    background: $primary-color;
+    color: $text-color;
+    .post {
+        img {
+            width: 100%;
+            height: auto;
         }
-        img:hover{
+        img:hover {
             @include transition();
         }
-        .post-thumb{
-            max-height:500px;
+        .post-thumb {
+            max-height: 500px;
             overflow: hidden;
         }
-        h2{
-            margin-top:20px;
-            font-weight: bolder;    
-        }
-        a{
-            color:$link-color;
+        h2 {
+            margin-top: 20px;
             font-weight: bolder;
         }
-        a:hover{
-            color:$link-color-hover;
+        a {
+            color: $link-color;
+            font-weight: bolder;
+        }
+        a:hover {
+            color: $link-color-hover;
             text-decoration: none;
         }
+    }
+}
+
+.single-post {
+    a {
+        color: $link-color;
+        font-weight: bolder;
+    }
+
+    a:hover {
+        color: $link-color-hover;
+        text-decoration: none;
+    }
+    hr{
+        margin:30px 0;
     }
 }
 
@@ -167,9 +204,9 @@ section {
         font-size: 40px;
         margin-left: 20px;
     }
-    
-    a{
-        color:inherit;
+
+    a {
+        color: inherit;
     }
 
     i:hover {
