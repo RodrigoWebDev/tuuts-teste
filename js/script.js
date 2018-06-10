@@ -1,14 +1,19 @@
 (function () {
-    //Adiciona transparência na barra de navegação quando o usuário "scrola" a pagina um pouco para baixo
-    var navbar = document.querySelector(".navbar");
+    //Deixa o fundo como "none" quando ta no topo da pagina
+    var nav = document.getElementsByClassName("navbar")[0];
 
     window.addEventListener("scroll", addTransparency);
 
     function addTransparency() {
-        if (scrollY > 50) {
-            navbar.style.opacity = "0.9";
+        if (scrollY > 0) {
+            nav.style.background = "#202124";
+            nav.classList.add("sticky-top");
+            console.log(nav.style.background)
+            
         } else {
-            navbar.style.opacity = "1";
+            nav.style.background = "none";
+            nav.classList.remove("sticky-top");
+            console.log(nav.style.background);
         }
     }
     

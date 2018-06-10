@@ -20,6 +20,11 @@ section {
     font-size: 30px;
 }
 
+.sticky-top{
+    position: -webkit-sticky !important;
+    position: sticky !important;
+}
+
 //SLIDER
 .slider {
     padding-top:0 !important;
@@ -43,8 +48,13 @@ $text-color: white;
 
 //NAV
 .navbar {
-    background: $primary-color;
     padding: 20px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width: 100%;
+    transition:.5s;
     .navbar-brand:hover {
         @include transition();
     }
