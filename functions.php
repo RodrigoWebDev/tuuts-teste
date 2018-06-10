@@ -8,4 +8,6 @@
     wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll.js', array(), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'getScritpts' );
+
+add_theme_support("post-thumbnails");
 ?>

@@ -1,3 +1,23 @@
+//VAR & MIXINS
+
+$primary-color: #202124;
+$link-color: #e74c3c;
+$link-color-hover: #c0392b;
+
+$text-color: white;
+
+@mixin transition() {
+    transition: .3s;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+@mixin color-transition() {
+    cursor: pointer;
+    color:$link-color !important;
+    transition: .3s;
+}
+
 //GERAL
 * {
     margin: 0;
@@ -12,6 +32,8 @@ section {
 .title {
     text-align: center;
     padding-bottom: 30px;
+    color: $link-color;
+    font-weight: bolder;
 }
 
 .navbar-brand {
@@ -34,18 +56,6 @@ section {
 }
 
 
-
-//VAR & MIXINS
-$primary-color: #202124;
-
-$text-color: white;
-
-@mixin transition() {
-    transition: .3s;
-    cursor: pointer;
-    opacity: 0.6;
-}
-
 //NAV
 .navbar {
     padding: 20px;
@@ -56,7 +66,13 @@ $text-color: white;
     width: 100%;
     transition:.5s;
     .navbar-brand:hover {
-        @include transition();
+        @include color-transition();
+    }
+    a{
+        color:$text-color !important;
+    }
+    a:hover{
+        @include color-transition();
     }
 }
 
@@ -66,6 +82,12 @@ $text-color: white;
             text-align: center;
         }
     }
+}
+
+//GALLERY
+
+.gallery{
+    background:$primary-color;
 }
 
 //PORTFOLIO
@@ -79,7 +101,7 @@ $text-color: white;
     }
     .portfolio__desc {
         .project {
-            background: $primary-color;
+            background: $link-color-hover;
             color: $text-color;
             border-radius: 3px;
             text-align: center;
@@ -88,14 +110,50 @@ $text-color: white;
         }
     }
     .alert-darkness {
+        background: $link-color-hover;
+        color: $text-color !important;
+    }
+    
+    .alert-dark {
         background: $primary-color;
-        color: white !important;
+        color: $text-color !important;
+    }
+}
+
+//BLOG
+
+.blog{
+    background:$primary-color;
+    color:$text-color;
+    .post{
+        img{
+            width:100%;
+            height:auto;
+        }
+        img:hover{
+            @include transition();
+        }
+        .post-thumb{
+            max-height:500px;
+            overflow: hidden;
+        }
+        h2{
+            margin-top:20px;
+            font-weight: bolder;    
+        }
+        a{
+            color:$link-color;
+            font-weight: bolder;
+        }
+        a:hover{
+            color:$link-color-hover;
+            text-decoration: none;
+        }
     }
 }
 
 //FOOTER
 .footer {
-    background: $primary-color;
     padding: 20px;
     .container {
         display: flex;
@@ -103,17 +161,19 @@ $text-color: white;
         align-items: center;
     }
     .navbar-brand {
-        color: $text-color !important;
+        color: inherit !important;
     }
     i {
-        color: white !important;
         font-size: 40px;
         margin-left: 20px;
     }
+    
+    a{
+        color:inherit;
+    }
 
     i:hover {
-        @include transition();
-
+        @include color-transition();
     }
 
 }

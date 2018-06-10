@@ -17,9 +17,6 @@
 </section>
 
 <!---------------  GALLERY  --------------->
-<div class="container">
-    <hr>
-</div>
 
 <section class="gallery">
     <div class="container">
@@ -28,10 +25,7 @@
     </div>
 </section>
 
-<!---------------  GALLERY  --------------->
-<div class="container">
-    <hr>
-</div>
+<!---------------  PORTFOLIO  --------------->
 
 <section id="portfolio" class="portfolio">
     <div class="container">
@@ -57,14 +51,38 @@
 
 </section>
 
-<!---------------  GALLERY  --------------->
-<div class="container">
-    <hr>
-</div>
+<!---------------  BLOG  --------------->
 
 
 <section class="blog">
-    <h2>Aqui vai os 2 posts mais recentes</h2>
+    <div class="container">
+       <h2 class="title">Blog da <span class="text-uppercase">Tuut</span></h2>
+       <div class="row">
+            <?php 
+
+                $featured = new WP_Query("type=post&posts_per_page=1");
+
+                if($featured -> have_posts()){
+                    while($featured -> have_posts()){
+                        $featured -> the_post();
+                        get_template_part("featured","post");
+                    }
+                    wp_reset_postdata();
+                }
+        
+                $posts = new WP_Query("type=post&posts_per_page=2&offset=1");
+
+                if($posts -> have_posts()){
+                    while($posts -> have_posts()){
+                        $posts -> the_post();
+                        get_template_part("post");
+                    }
+                    wp_reset_postdata();
+                }
+                
+            ?>
+        </div>
+    </div>
 </section>
 
 <!---------------  FOOTER  --------------->
