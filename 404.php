@@ -20,17 +20,8 @@
         <!---------------  BLOG  --------------->
         <div class="col-md-8 order-1 order-md-2">
             <section class="blog" style="background:none;color:inherit;padding:0">
-               <div class="row">
-                    <?php 
-                        if(have_posts()){
-                            while(have_posts()){
-                                the_post();
-                                get_template_part("post");
-                            }
-                            wp_reset_postdata();
-                        }
-                    ?>
-                </div>
+                <h2>Erro 404</h2>
+                <p>Post ou página não encontrada</p>
             </section>
         </div>
     </div>

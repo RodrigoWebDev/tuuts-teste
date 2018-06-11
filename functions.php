@@ -10,4 +10,18 @@
 add_action( 'wp_enqueue_scripts', 'getScritpts' );
 
 add_theme_support("post-thumbnails");
+
+if(function_exists("register_sidebar")){
+    register_sidebar(
+        array(
+            "name" => "Barra lateral",
+            "id" => "sidebar-blog",
+            "description" => "Barra lateral do blog",
+            "before-widget" => "<div class='widget-container'>",
+            "after-widget" => "</div>",
+            "before-title" => "<h2 class='widget__title'>",
+            "after-title" => "</h2>",
+        )
+    );
+}
 ?>

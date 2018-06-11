@@ -1,0 +1,3 @@
+<form tole="search" method="get"  action="<?php echo home_url('/');?>" id="demo-2">
+    <input class="search-form" type="search" placeholder="Pesquisar..." value="<?php echo get_search_query();?>" name="s" title="Pesquisa">
+</form>

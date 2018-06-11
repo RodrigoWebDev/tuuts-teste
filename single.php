@@ -22,13 +22,20 @@
                <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
                    <p><span><?php the_category();?></span>  <span class="ml-2"><?php the_tags("<span>Tags:</span> ", ", ");?></span></p>
                </div>
-                <?php } ?>
+                
            </div>
            <hr>
             <p><?php the_content();?></p>
+            <hr>
+            <?php 
+                if(comments_open() || get_comments_number()){
+                        comments_template();
+                    }
+                } 
+            ?>
         </div>
     </article>
     <!---------------  FOOTER  --------------->
-    <?php get_footer();?>
+    <?php get_footer("blog");?>
 
     
