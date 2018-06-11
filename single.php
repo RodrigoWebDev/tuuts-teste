@@ -1,14 +1,14 @@
     <?php get_header("blog");?>
     <!---------------  SLIDER  --------------->
 
-    <section id="top" class="hero">
+    <section id="top" class="hero wow fadeIn">
         <?php the_post_thumbnail() ?>
         <h1><?php the_title();?></h1>
     </section>
 
     <article class="single-post">
-        <div class="container">
-           <div class="row">
+        <div class="container wow fadeInUp">
+           <div class="row ">
               <?php 
                 while(have_posts()){
                     the_post();

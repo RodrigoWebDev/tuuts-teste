@@ -1,4 +1,4 @@
-<footer class="footer-blog">
+<footer class="footer-blog wow fadeInUp">
     <div class="container">
         <a class="navbar-brand">Tuut</a>
         <div class="footer__social">
@@ -8,7 +8,10 @@
     </div>
 </footer>
     
-    <?php wp_footer()?>
+<?php wp_footer()?>
+<script>
+    new WOW().init();
+</script>
 </body>
 
 </html>

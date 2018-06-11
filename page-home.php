@@ -1,13 +1,13 @@
 <?php get_header();?>
 <!---------------  SLIDER  --------------->
 
-<section id="top" class="slider">
+<section id="top" class="slider wow fadeIn">
     <?php echo do_shortcode('[metaslider id="8"]'); ?>
 </section>
 
 <!---------------  ABOUT  --------------->
 
-<section id="about" class="about">
+<section id="about" class="about wow fadeInUp">
     <div class="container">
         <h2 class="title">Sobre a <span class="text-uppercase">Tuut</span></h2>
         <div class="alert alert-dark">
@@ -18,7 +18,7 @@
 
 <!---------------  GALLERY  --------------->
 
-<section class="gallery">
+<section class="gallery wow fadeInUp">
     <div class="container">
         <h2 class="title">Galeria <span class="text-uppercase">Tuut</span></h2>
         <?php echo do_shortcode('[supsystic-gallery id=1]') ?>
@@ -29,20 +29,20 @@
 
 <section id="portfolio" class="portfolio">
     <div class="container">
-        <h2 class="title">Alguns de nossos projetos</h2>
+        <h2 class="title wow fadeInUp">Alguns de nossos projetos</h2>
         <div class="row">
             <div class="col-md-6">
                 <ul class="portfolio__ul">
-                    <div class="alert alert-dark" role="alert">Projeto 1</div>
-                    <div class="alert alert-darkness" role="alert">Projeto 2</div>
-                    <div class="alert alert-dark" role="alert">Projeto 3</div>
-                    <div class="alert alert-darkness" role="alert">Projeto 4</div>
-                    <div class="alert alert-dark" role="alert">Projeto 5</div>
-                    <div class="alert alert-darkness" role="alert">Projeto 6</div>
-                    <div class="alert alert-dark" role="alert">Projeto 7</div>
+                    <div class="alert alert-dark wow fadeInUp" role="alert">Projeto 1</div>
+                    <div class="alert alert-darkness wow fadeInUp" role="alert">Projeto 2</div>
+                    <div class="alert alert-dark wow fadeInUp" role="alert">Projeto 3</div>
+                    <div class="alert alert-darkness wow fadeInUp" role="alert">Projeto 4</div>
+                    <div class="alert alert-dark wow fadeInUp" role="alert">Projeto 5</div>
+                    <div class="alert alert-darkness wow fadeInUp" role="alert">Projeto 6</div>
+                    <div class="alert alert-dark wow fadeInUp" role="alert">Projeto 7</div>
                 </ul>
             </div>
-            <div class="portfolio__desc col-md-6">
+            <div class="portfolio__desc col-md-6 wow fadeInUp">
                 <p>Nosso trabalho é feito em parceria com nossos clientes. Um trabalho a quatro mãos, em que nos envolvemos em todos os meandros do processo, propondo soluções práticas e acompanhando os resultados</p>
                 <div class="project">Projeto 1</div>
             </div>
@@ -54,7 +54,7 @@
 <!---------------  BLOG  --------------->
 
 
-<section class="blog">
+<section class="blog wow fadeInUp">
     <div class="container">
        <h2 class="title">Blog da <span class="text-uppercase">Tuut</span></h2>
        <div class="row">

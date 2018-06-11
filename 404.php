@@ -1,7 +1,7 @@
 <?php get_header("blog");?>
 <!---------------  SLIDER  --------------->
 
-<section id="top" class="slider">
+<section id="top" class="slider wow fadeIn">
     <?php echo do_shortcode('[metaslider id="8"]'); ?>
 </section>
 
@@ -11,14 +11,14 @@
        
        <!---------------  SIDEBAR  --------------->
         <div class="col-md-4 order-2 order-md-1">
-            <aside class="sidebar">
+            <aside class="sidebar wow fadeInUp">
                 <?php get_search_form();?>
                 <?php get_sidebar();?>
             </aside>
         </div>
         
         <!---------------  BLOG  --------------->
-        <div class="col-md-8 order-1 order-md-2">
+        <div class="col-md-8 order-1 order-md-2 wow fadeInUp">
             <section class="blog" style="background:none;color:inherit;padding:0">
                 <h2>Erro 404</h2>
                 <p>Post ou página não encontrada</p>

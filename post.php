@@ -1,4 +1,4 @@
-<div class="col-md-6">
+<div class="col-md-6 wow fadeInUp">
     <article class="post">
         <a href="<?php the_permalink()?>">
             <?php the_post_thumbnail()?>

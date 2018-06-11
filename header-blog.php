@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark wow fadeIn">
         <div class="container">
             <a class="navbar-brand" href="<?php echo get_page_link(12); ?>">Tuut</a>
         </div>
